@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      #container-do-flexbox {
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding-block: 16px;
+      }
+
+      .quadrado {
+        width: 300px;
+        height: 300px;
+      }
+
+      .vermelho {
+        background-color: red;
+      }
+
+      .azul {
+        background-color: blue;
+      }
+
+      .verde {
+        background-color: green;
+      }
+
+      @media (min-width: 600px) {
+        .quadrado {
+          width: 400px;
+          height: 400px;
+        }
+      }
+
+      @media (min-width: 1000px) {
+        #container-do-flexbox {
+          flex-direction: row;
+          justify-content: center;
+        }
+
+        .quadrado {
+          width: 300px;
+          height: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- https://flexboxfroggy.com/ -->
+    <!-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/ -->
+    <div id="container-do-flexbox">
+      <div class="quadrado vermelho"></div>
+      <div class="quadrado azul"></div>
+      <div class="quadrado verde"></div>
+    </div>
+  </body>
+</html>
